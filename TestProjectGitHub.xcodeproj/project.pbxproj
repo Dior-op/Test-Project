@@ -12,6 +12,12 @@
 		17A75E3C2F1904230053A621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A75E3B2F1904230053A621 /* Assets.xcassets */; };
 		17A75E3F2F1904230053A621 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A75E3E2F1904230053A621 /* Preview Assets.xcassets */; };
 		17A75E462F190E300053A621 /* TestMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E452F190E300053A621 /* TestMainView.swift */; };
+		17A75E492F193E5C0053A621 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E482F193E5C0053A621 /* ButtonStyles.swift */; };
+		17A75E4B2F195B560053A621 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E4A2F195B550053A621 /* SignUpView.swift */; };
+		17A75E4D2F195B650053A621 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E4C2F195B650053A621 /* SignInView.swift */; };
+		17A75E502F195F240053A621 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E4F2F195F240053A621 /* TextFieldModifier.swift */; };
+		17A75E552F196CF90053A621 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 17A75E542F196CF90053A621 /* KeychainSwift */; };
+		17A75E582F1970DD0053A621 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E572F1970DD0053A621 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,11 @@
 		17A75E3B2F1904230053A621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17A75E3E2F1904230053A621 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17A75E452F190E300053A621 /* TestMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMainView.swift; sourceTree = "<group>"; };
+		17A75E482F193E5C0053A621 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		17A75E4A2F195B550053A621 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		17A75E4C2F195B650053A621 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		17A75E4F2F195F240053A621 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
+		17A75E572F1970DD0053A621 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A75E552F196CF90053A621 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,8 @@
 				17A75E372F1904220053A621 /* TestProjectGitHubApp.swift */,
 				17A75E392F1904220053A621 /* ContentView.swift */,
 				17A75E452F190E300053A621 /* TestMainView.swift */,
+				17A75E562F1970AA0053A621 /* MainView */,
+				17A75E472F193E430053A621 /* UI */,
 				17A75E3B2F1904230053A621 /* Assets.xcassets */,
 				17A75E3D2F1904230053A621 /* Preview Content */,
 			);
@@ -68,6 +82,49 @@
 				17A75E3E2F1904230053A621 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17A75E472F193E430053A621 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				17A75E512F1966BC0053A621 /* SignUp */,
+				17A75E522F1967330053A621 /* SignIn */,
+				17A75E4A2F195B550053A621 /* SignUpView.swift */,
+				17A75E4C2F195B650053A621 /* SignInView.swift */,
+				17A75E4E2F195B700053A621 /* ButtonStyle */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		17A75E4E2F195B700053A621 /* ButtonStyle */ = {
+			isa = PBXGroup;
+			children = (
+				17A75E482F193E5C0053A621 /* ButtonStyles.swift */,
+				17A75E4F2F195F240053A621 /* TextFieldModifier.swift */,
+			);
+			path = ButtonStyle;
+			sourceTree = "<group>";
+		};
+		17A75E512F1966BC0053A621 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		17A75E522F1967330053A621 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		17A75E562F1970AA0053A621 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				17A75E572F1970DD0053A621 /* MainView.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +143,9 @@
 			dependencies = (
 			);
 			name = TestProjectGitHub;
+			packageProductDependencies = (
+				17A75E542F196CF90053A621 /* KeychainSwift */,
+			);
 			productName = TestProjectGitHub;
 			productReference = 17A75E342F1904220053A621 /* TestProjectGitHub.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 17A75E2B2F1904220053A621;
+			packageReferences = (
+				17A75E532F196CF80053A621 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 17A75E352F1904220053A621 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A75E4D2F195B650053A621 /* SignInView.swift in Sources */,
+				17A75E582F1970DD0053A621 /* MainView.swift in Sources */,
 				17A75E3A2F1904220053A621 /* ContentView.swift in Sources */,
+				17A75E4B2F195B560053A621 /* SignUpView.swift in Sources */,
+				17A75E492F193E5C0053A621 /* ButtonStyles.swift in Sources */,
+				17A75E502F195F240053A621 /* TextFieldModifier.swift in Sources */,
 				17A75E382F1904220053A621 /* TestProjectGitHubApp.swift in Sources */,
 				17A75E462F190E300053A621 /* TestMainView.swift in Sources */,
 			);
@@ -201,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -258,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -290,6 +358,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Test2.TestProjectGitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,6 +389,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Test2.TestProjectGitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17A75E532F196CF80053A621 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17A75E542F196CF90053A621 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17A75E532F196CF80053A621 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17A75E2C2F1904220053A621 /* Project object */;
 }
