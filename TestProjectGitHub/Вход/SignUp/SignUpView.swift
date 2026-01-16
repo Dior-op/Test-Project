@@ -58,7 +58,26 @@ struct SignUpView: View {
             }
 
             Button {
-                vm.checkPassword()
+                guard vm.checkPassword() else { return }
+
+
+                Task {
+                    do {
+                        try await vm.sendLogin(
+                            email: vm.emailTextfield,
+                            password: vm.passwordTextfield
+                        )
+
+                        await MainActor.run {
+                            vm.signUpResult = .success
+                        }
+
+                    } catch {
+                        await MainActor.run {
+                            vm.signUpResult = .error("Ошибка сервера")
+                        }
+                    }
+                }
             } label: {
                 Text("Sign Up")
             }
@@ -105,7 +124,7 @@ struct SignUpView: View {
 
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.purple.opacity(0.4))
+        .background(LinearGradient(colors: [.purple, .indigo], startPoint: .topLeading, endPoint: .bottomTrailing))
 
     }
     

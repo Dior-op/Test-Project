@@ -76,8 +76,8 @@
 				17A75E372F1904220053A621 /* TestProjectGitHubApp.swift */,
 				17A75E392F1904220053A621 /* ContentView.swift */,
 				17A75E452F190E300053A621 /* TestMainView.swift */,
-				17A75E562F1970AA0053A621 /* MainView */,
-				17A75E472F193E430053A621 /* UI */,
+				17A75E472F193E430053A621 /* Вход */,
+				17A75E562F1970AA0053A621 /* ГлавныйЭкран */,
 				17A75E3B2F1904230053A621 /* Assets.xcassets */,
 				17A75E3D2F1904230053A621 /* Preview Content */,
 			);
@@ -92,14 +92,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		17A75E472F193E430053A621 /* UI */ = {
+		17A75E472F193E430053A621 /* Вход */ = {
 			isa = PBXGroup;
 			children = (
 				17A75E512F1966BC0053A621 /* SignUp */,
 				17A75E522F1967330053A621 /* SignIn */,
 				17A75E4E2F195B700053A621 /* ButtonStyle */,
 			);
-			path = UI;
+			path = "Вход";
 			sourceTree = "<group>";
 		};
 		17A75E4E2F195B700053A621 /* ButtonStyle */ = {
@@ -131,12 +131,13 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
-		17A75E562F1970AA0053A621 /* MainView */ = {
+		17A75E562F1970AA0053A621 /* ГлавныйЭкран */ = {
 			isa = PBXGroup;
 			children = (
 				17A75E572F1970DD0053A621 /* MainView.swift */,
 			);
-			path = MainView;
+			name = "ГлавныйЭкран";
+			path = "ГлавныйЭкран";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

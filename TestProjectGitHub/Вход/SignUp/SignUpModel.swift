@@ -10,3 +10,9 @@ enum SignUpResult: Equatable {
     case error(String)
     case success
 }
+
+
+struct LoginRequest: Codable {
+    let email: String
+    let password: String
+}

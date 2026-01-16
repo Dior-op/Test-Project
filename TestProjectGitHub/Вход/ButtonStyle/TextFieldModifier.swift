@@ -21,7 +21,7 @@ struct AppTextFieldModifier: ViewModifier {
         } else if isFocused {
             return .blue
         } else {
-            return .gray.opacity(0.4)
+            return .black.opacity(0.5)
         }
     }
 }

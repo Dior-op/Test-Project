@@ -1,5 +1,4 @@
 import Foundation
-import KeychainSwift
 import Combine
 
 final class SignUpViewModel: ObservableObject {
@@ -32,28 +31,24 @@ final class SignUpViewModel: ObservableObject {
             .assign(to: &$emailState)
     }
 
-    func checkPassword() {
+    func checkPassword() -> Bool {
         guard passwordTextfield.count >= 8 else {
             signUpResult = .error("Пароль должен содержать минимум 8 символов")
-            return
+            return false
         }
 
         guard passwordTextfield.rangeOfCharacter(from: .letters) != nil else {
             signUpResult = .error("Пароль должен содержать хотя бы одну букву")
-            return
+            return false
         }
 
         guard passwordTextfield.rangeOfCharacter(from: .decimalDigits) != nil else {
             signUpResult = .error("Пароль должен содержать хотя бы одну цифру")
-            return
+            return false
         }
 
-        let keychain = KeychainSwift()
-        keychain.set(passwordTextfield,
-                     forKey: "userPassword",
-                     withAccess: .accessibleWhenUnlocked)
-
         signUpResult = .success
+        return true
     }
 
     static func isValidEmail(_ email: String) -> Bool {
@@ -62,4 +57,24 @@ final class SignUpViewModel: ObservableObject {
             .evaluate(with: email)
     }
 
+    
+    func sendLogin(email: String, password: String) async throws {
+        guard let url = URL(string: "") else {
+            throw URLError(.badURL)
+        }
+        let body = LoginRequest(email: email, password: password)
+        let jsonData = try JSONEncoder().encode(body)
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+        
+        let (_, response) = try await URLSession.shared.data(for: request)
+        
+        guard let httpResponse = response as? HTTPURLResponse,
+              (200...299).contains(httpResponse.statusCode) else {
+            throw URLError(.badServerResponse)
+        }
+    }
 }

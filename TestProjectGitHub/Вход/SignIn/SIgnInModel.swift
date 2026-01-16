@@ -15,11 +15,6 @@ let mockUsers: [User] = [
 ]
 
 
-struct LoginRequest: Codable {
-    let email: String
-    let password: String
-}
-
 struct LoginResponse: Codable {
     let success: Bool
     let message: String
