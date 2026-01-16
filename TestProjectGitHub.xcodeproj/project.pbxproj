@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17918C032F1ADA5A0041A4EA /* MianViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17918C022F1ADA5A0041A4EA /* MianViewModel.swift */; };
 		17A75E382F1904220053A621 /* TestProjectGitHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E372F1904220053A621 /* TestProjectGitHubApp.swift */; };
 		17A75E3A2F1904220053A621 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E392F1904220053A621 /* ContentView.swift */; };
 		17A75E3C2F1904230053A621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A75E3B2F1904230053A621 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17918C022F1ADA5A0041A4EA /* MianViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MianViewModel.swift; sourceTree = "<group>"; };
 		17A75E342F1904220053A621 /* TestProjectGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProjectGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A75E372F1904220053A621 /* TestProjectGitHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectGitHubApp.swift; sourceTree = "<group>"; };
 		17A75E392F1904220053A621 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17918C012F1AD09B0041A4EA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		17A75E2B2F1904220053A621 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				17A75E572F1970DD0053A621 /* MainView.swift */,
+				17918C022F1ADA5A0041A4EA /* MianViewModel.swift */,
+				17918C012F1AD09B0041A4EA /* TabBar */,
 			);
 			name = "ГлавныйЭкран";
 			path = "ГлавныйЭкран";
@@ -218,6 +229,7 @@
 			files = (
 				17A75E4D2F195B650053A621 /* SignInView.swift in Sources */,
 				17A75E602F1A56C50053A621 /* SIgnInModel.swift in Sources */,
+				17918C032F1ADA5A0041A4EA /* MianViewModel.swift in Sources */,
 				17A75E582F1970DD0053A621 /* MainView.swift in Sources */,
 				17A75E3A2F1904220053A621 /* ContentView.swift in Sources */,
 				17A75E4B2F195B560053A621 /* SignUpView.swift in Sources */,
