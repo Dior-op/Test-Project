@@ -4,11 +4,11 @@ import SwiftUI
 struct PrimaryButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .padding()
+            .padding(12)
             .frame(maxWidth: .infinity)
             .background(configuration.isPressed ? Color.blue.opacity(0.6) : Color.blue)
             .foregroundColor(.white)
-            .cornerRadius(12)
+            .cornerRadius(15)
             .scaleEffect(configuration.isPressed ? 0.97 : 1)
     }
 }

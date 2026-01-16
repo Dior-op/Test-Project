@@ -20,6 +20,8 @@
 		17A75E582F1970DD0053A621 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E572F1970DD0053A621 /* MainView.swift */; };
 		17A75E5A2F1A37A10053A621 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E592F1A37A10053A621 /* SignUpViewModel.swift */; };
 		17A75E5C2F1A45380053A621 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E5B2F1A45380053A621 /* SignUpModel.swift */; };
+		17A75E5E2F1A51B30053A621 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E5D2F1A51B30053A621 /* SignInViewModel.swift */; };
+		17A75E602F1A56C50053A621 /* SIgnInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E5F2F1A56C50053A621 /* SIgnInModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		17A75E572F1970DD0053A621 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		17A75E592F1A37A10053A621 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		17A75E5B2F1A45380053A621 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		17A75E5D2F1A51B30053A621 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		17A75E5F2F1A56C50053A621 /* SIgnInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnInModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +95,6 @@
 		17A75E472F193E430053A621 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				17A75E4C2F195B650053A621 /* SignInView.swift */,
 				17A75E512F1966BC0053A621 /* SignUp */,
 				17A75E522F1967330053A621 /* SignIn */,
 				17A75E4E2F195B700053A621 /* ButtonStyle */,
@@ -121,6 +124,9 @@
 		17A75E522F1967330053A621 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				17A75E4C2F195B650053A621 /* SignInView.swift */,
+				17A75E5D2F1A51B30053A621 /* SignInViewModel.swift */,
+				17A75E5F2F1A56C50053A621 /* SIgnInModel.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17A75E4D2F195B650053A621 /* SignInView.swift in Sources */,
+				17A75E602F1A56C50053A621 /* SIgnInModel.swift in Sources */,
 				17A75E582F1970DD0053A621 /* MainView.swift in Sources */,
 				17A75E3A2F1904220053A621 /* ContentView.swift in Sources */,
 				17A75E4B2F195B560053A621 /* SignUpView.swift in Sources */,
@@ -217,6 +224,7 @@
 				17A75E492F193E5C0053A621 /* ButtonStyles.swift in Sources */,
 				17A75E502F195F240053A621 /* TextFieldModifier.swift in Sources */,
 				17A75E5C2F1A45380053A621 /* SignUpModel.swift in Sources */,
+				17A75E5E2F1A51B30053A621 /* SignInViewModel.swift in Sources */,
 				17A75E382F1904220053A621 /* TestProjectGitHubApp.swift in Sources */,
 				17A75E462F190E300053A621 /* TestMainView.swift in Sources */,
 			);
