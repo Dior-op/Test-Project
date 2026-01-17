@@ -1,5 +1,4 @@
 import Foundation
-
 final class MainViewModel: ObservableObject {
     
     @Published var paymentName: String = "Название платежа"
