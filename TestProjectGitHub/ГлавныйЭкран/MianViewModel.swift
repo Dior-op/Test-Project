@@ -5,5 +5,7 @@ final class MainViewModel: ObservableObject {
     @Published var sum: String = "$ 25 000"
     @Published var paymentTerm: String = "23 november"
     
+    @Published var selectedTab: TabItem = .home
+
     
 }

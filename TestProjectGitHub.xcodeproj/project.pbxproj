@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		174118222F1B9C76002EFB79 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174118212F1B9C76002EFB79 /* CustomTabBar.swift */; };
+		176658782F1C05EF00744D6F /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176658772F1C05EF00744D6F /* TabBarModel.swift */; };
 		17918C032F1ADA5A0041A4EA /* MianViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17918C022F1ADA5A0041A4EA /* MianViewModel.swift */; };
 		17A75E382F1904220053A621 /* TestProjectGitHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E372F1904220053A621 /* TestProjectGitHubApp.swift */; };
 		17A75E3A2F1904220053A621 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A75E392F1904220053A621 /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		174118212F1B9C76002EFB79 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		176658772F1C05EF00744D6F /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
 		17918C022F1ADA5A0041A4EA /* MianViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MianViewModel.swift; sourceTree = "<group>"; };
 		17A75E342F1904220053A621 /* TestProjectGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProjectGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A75E372F1904220053A621 /* TestProjectGitHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectGitHubApp.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				174118212F1B9C76002EFB79 /* CustomTabBar.swift */,
+				176658772F1C05EF00744D6F /* TabBarModel.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				17A75E4B2F195B560053A621 /* SignUpView.swift in Sources */,
 				17A75E5A2F1A37A10053A621 /* SignUpViewModel.swift in Sources */,
 				17A75E492F193E5C0053A621 /* ButtonStyles.swift in Sources */,
+				176658782F1C05EF00744D6F /* TabBarModel.swift in Sources */,
 				17A75E502F195F240053A621 /* TextFieldModifier.swift in Sources */,
 				17A75E5C2F1A45380053A621 /* SignUpModel.swift in Sources */,
 				17A75E5E2F1A51B30053A621 /* SignInViewModel.swift in Sources */,
