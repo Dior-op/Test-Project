@@ -6,7 +6,6 @@ struct CustomTabBar: View {
     @Namespace private var animation
 
     var body: some View {
-        
         HStack(spacing: 0) {
             ForEach(TabItem.allCases, id: \.self) { tab in
                 tabItem(tab)
@@ -15,11 +14,13 @@ struct CustomTabBar: View {
         .padding(8)
         .background(
             RoundedRectangle(cornerRadius: 24)
-                .fill(.ultraThinMaterial)
+                .fill(.ultraThinMaterial)   // материал
+                .opacity(0.95)
                 .shadow(color: .black.opacity(0.15), radius: 10, x: 0, y: 6)
         )
         .padding(.horizontal, 16)
         .padding(.bottom, 12)
+        .ignoresSafeArea(edges: .bottom)
     }
 
     private func tabItem(_ tab: TabItem) -> some View {

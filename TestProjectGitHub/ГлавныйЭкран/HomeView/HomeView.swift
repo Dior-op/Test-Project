@@ -1,15 +1,9 @@
-//
-//  HomeView.swift
-//  TestProjectGitHub
-//
-//  Created by Shahriyor on 18/01/26.
-//
-
 import SwiftUI
 
 struct HomeView: View {
 
     @StateObject var vm = HomeViewModel()
+    @State private var showAddCard = false
 
     var body: some View {
         VStack {
@@ -21,15 +15,15 @@ struct HomeView: View {
                 Spacer()
         
                 Button {
-                    vm.saveCard(
-                        name: "Кредит",
-                        sum: "15 000 ₽",
-                        term: "До 20 сентября"
-                    )
-
+                    showAddCard = true
                 } label: {
                     Image(systemName: "plus")
                 }
+                .sheet(isPresented: $showAddCard) {
+                    AddPaymentView(vm: vm)
+                        .presentationDetents([.medium])
+                }
+
             }
             .padding(.horizontal)
             
@@ -90,6 +84,59 @@ struct PaymentCardView: View {
                 }
             }
             .padding()
+        }
+    }
+}
+
+struct AddPaymentView: View {
+
+    @Environment(\.dismiss) var dismiss
+    @ObservedObject var vm: HomeViewModel
+
+    @State private var name = ""
+    @State private var sum = ""
+    @State private var term = ""
+
+    var body: some View {
+        
+        
+        
+        NavigationView {
+            VStack {
+                
+                Text("")
+                TextField("Название", text: $name)
+                    .appTextField()
+                HStack {
+                    TextField("0.00", text: $sum)
+                        .keyboardType(.numberPad)
+                        .appTextField()
+                    Text("валюта")
+                }
+                TextField("Срок", text: $term)
+                    .appTextField()
+
+            }
+            .padding()
+            .navigationTitle("Новый платёж")
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Сохранить") {
+                        vm.saveCard(
+                            name: name,
+                            sum: sum,
+                            term: term
+                        )
+                        dismiss()
+                    }
+                }
+
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Отмена") {
+                        dismiss()
+                    }
+                }
+            }
         }
     }
 }

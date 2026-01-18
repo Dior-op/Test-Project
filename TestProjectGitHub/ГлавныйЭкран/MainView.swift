@@ -5,10 +5,9 @@ struct MainView: View {
     @StateObject var vm = MainViewModel()
 
     var body: some View {
-        VStack(spacing: 0) {
+        ZStack(alignment: .bottom) {
 
-
-            ZStack {
+            Group {
                 switch vm.selectedTab {
                 case .home:
                     HomeView()
@@ -18,14 +17,12 @@ struct MainView: View {
                     SignInView()
                 }
             }
+            .ignoresSafeArea(.keyboard) 
 
-            Spacer()
             CustomTabBar(viewModel: vm)
         }
     }
 }
-
-
 
 
 #Preview {
