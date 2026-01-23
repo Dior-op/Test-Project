@@ -1,7 +1,5 @@
 import Foundation
 
-
-
 final class SignInViewModel: ObservableObject {
     
     @Published var passwordTextfield: String = ""
